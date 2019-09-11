@@ -13,7 +13,7 @@
     <string name="hint_password">password</string>
     <string name="hint_email">email</string>
     <string name="sign_in">Sign In</string>
-    <string name="heading_recent">Hot</string>
+    <string name="heading_recent">Food</string>
     <string name="heading_my_posts">Movie</string>
     <string name="heading_my_top_posts" >Music</string>
     <string name="heading_sport">Sport</string>
