@@ -11,9 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.jianjian.jc486415.mysocialapp.fragment.MyPostsFragment;
-import com.jianjian.jc486415.mysocialapp.fragment.MyTopPostsFragment;
-import com.jianjian.jc486415.mysocialapp.fragment.RecentPostsFragment;
+import com.jianjian.jc486415.mysocialapp.fragment.Game;
+import com.jianjian.jc486415.mysocialapp.fragment.Movie;
+import com.jianjian.jc486415.mysocialapp.fragment.Music;
 import com.jianjian.jc486415.mysocialapp.fragment.Sport;
 
 public class  MainActivity extends BaseActivity {
@@ -31,16 +31,17 @@ public class  MainActivity extends BaseActivity {
         // Create the adapter that will return a fragment for each section
         mPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             private final Fragment[] mFragments = new Fragment[] {
-                    new RecentPostsFragment(),
-                    new MyPostsFragment(),
-                    new MyTopPostsFragment(),
                     new Sport(),
+                    new Game(),
+                    new Movie(),
+                    new Music(),
             };
             private final String[] mFragmentNames = new String[] {
-                    getString(R.string.heading_recent),
-                    getString(R.string.heading_my_posts),
                     getString(R.string.heading_my_top_posts),
                     getString(R.string.heading_sport),
+                    getString(R.string.heading_game),
+                    getString(R.string.heading_movie),
+                    getString(R.string.heading_music),
             };
             @Override
             public Fragment getItem(int position) {

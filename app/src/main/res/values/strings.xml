@@ -17,4 +17,7 @@
     <string name="heading_my_posts">Movie</string>
     <string name="heading_my_top_posts" >Music</string>
     <string name="heading_sport">Sport</string>
+    <string name="heading_game">Game</string>
+    <string name="heading_movie">Movie</string>
+    <string name="heading_music">Music</string>
 </resources>
